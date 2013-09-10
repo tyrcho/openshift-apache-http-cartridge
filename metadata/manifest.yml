@@ -1,0 +1,23 @@
+Name: Apache-HTTPD-Webserver
+Cartridge-Short-Name: APACHE
+Display-Name: Apache 2 HTTPD Webserver
+Description: "The Apache HTTPD Webserver with NameVirtualHosts"
+Version: '2.4.6'
+License: APL-2.0
+Vendor: Apache Software Foundation
+Cartridge-Version: 1.0.0
+Cartridge-Vendor: bkuebler
+Source-Url: https://github.com/bkuebler/openshift-apache-http-cartridge.git
+Categories:
+  - service
+  - webserver
+Provides:
+  - "Apache HTTPD"
+  - httpd
+Publishes:
+Subscribes:
+Endpoints:
+Scaling:
+  Min: 1
+  Max: -1
+
