@@ -16,7 +16,21 @@ Provides:
   - httpd
 Publishes:
 Subscribes:
+Group-Overrides:
+  - components:
+    - web_proxy
 Endpoints:
+  - Private-IP-Name:   IP
+    Private-Port-Name: PORT
+    Private-Port:      8080
+    Public-Port-Name:  PROXY_PORT
+    Mappings:
+      - Frontend:      ""
+        Backend:       ""
+        Options:       { websocket: false }
+      - Frontend:      "/health"
+        Backend:       ""
+        Options:       { health: true }
 Scaling:
   Min: 1
   Max: -1
