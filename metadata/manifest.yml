@@ -1,4 +1,4 @@
-Name: Apache-HTTPD-Webserver
+Name: ApacheHTTPDWebserver
 Cartridge-Short-Name: APACHE
 Display-Name: Apache 2 HTTPD Webserver
 Description: "The Apache HTTPD Webserver with NameVirtualHosts"
